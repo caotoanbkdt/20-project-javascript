@@ -1,1 +1,86 @@
-/* No CSS */
+.seat {
+  width: 1rem;
+  height: 0.8rem;
+  margin-right: 0.2rem;
+  background-color: #444451;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+}
+
+.seat.selected {
+  background-color: #6feaf6;
+}
+
+.seat.occupied {
+  background-color: #fff;
+  cursor: unset;
+}
+
+body {
+  background-color: #242333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.movie-container select {
+  padding: 0.3rem 1rem;
+  margin-left: 1rem;
+  border-radius: 0.4rem;
+  appearance: none;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  margin-bottom: 2rem;
+}
+
+ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.movie-book {
+  perspective: 1000px;
+  margin: 1rem 0;
+}
+
+.movie-book .screen {
+  background-color: #fff;
+  width: 100%;
+  height: 5rem;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.5);
+  margin-bottom: 1rem;
+  transform: rotateX(-45deg);
+}
+
+.movie-book .row {
+  display: flex;
+}
+
+.movie-book .row .seat {
+  margin: 3px;
+}
+
+.movie-book .row .seat:nth-of-type(2) {
+  margin-right: 1rem;
+}
+
+.movie-book .row .seat:nth-last-of-type(2) {
+  margin-left: 1rem;
+}
+
+.summary span {
+  color: #6feaf6;
+}
