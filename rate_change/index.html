@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exchange Rate Calculator</title>
+  <script src="https://kit.fontawesome.com/9201f9c9cf.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/styles/app.css">
+</head>
+<body>
+  <img src="assets/img/money.png" alt="">
+  <h1>exchange rate calculator</h1>
+  <p>Choose the currency and the amounts to get the exchange rate</p>
+  <div class="container">
+    <div class="block">
+      <select id="current"></select>
+      <input type="number" value="1" id="amount-start" min="0">
+    </div>
+    <div class="block">
+      <button class="btn">Swap</button>
+      <div class="rate"></div>
+    </div>
+    <div class="block">
+      <select id="exchange"></select>
+      <input type="text" placeholder="0.00" id="amount-end">
+    </div>
+  </div>
+  <script src="assets/scripts/app.js"></script>
+</body>
+</html>
